@@ -8,7 +8,17 @@
 if(window.DeviceMotionEvent){
 	window.addEventListener('devicemotion',function(ev){
 		var msg = ev.accelerationIncludingGravity;
-		document.write('x轴:'+msg.x+'\n'+'y轴:'+msg.y+'\n'+'z轴:'+msg.z+'\n'+'<br>');
+		var lastX=mas.x;
+		var lastY=mas.y;
+		var lastZ=mas.z;
+		
+		setInterval(function(){
+			//document.write('x轴:'+msg.x+'\n'+'y轴:'+msg.y+'\n'+'z轴:'+msg.z+'\n'+'<br>');
+			if(Math.abs(msg.x-lastX)>20){
+				alert('yaole');
+			}
+		},500);
+		
 	},false)
 }else{
 	alert('不支持');
