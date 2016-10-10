@@ -8,9 +8,9 @@
 if(window.DeviceMotionEvent){
 	window.addEventListener('devicemotion',function(ev){
 		var msg = ev.accelerationIncludingGravity;
-		var lastX=mas.x;
-		var lastY=mas.y;
-		var lastZ=mas.z;
+		var lastX=msg.x;
+		var lastY=msg.y;
+		var lastZ=msg.z;
 		
 		setInterval(function(){
 			//document.write('x轴:'+msg.x+'\n'+'y轴:'+msg.y+'\n'+'z轴:'+msg.z+'\n'+'<br>');
