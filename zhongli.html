@@ -6,9 +6,9 @@
 </head>
 <script>
 if(window.DeviceMotionEvent){
-	var lastX=msg.x;
-	var lastY=msg.y;
-	var lastZ=msg.z;
+	var lastX=0;
+	var lastY=0;
+	var lastZ=0;
 	
 	window.addEventListener('devicemotion',function(ev){
 		var msg = ev.accelerationIncludingGravity;
@@ -17,6 +17,9 @@ if(window.DeviceMotionEvent){
 			if(Math.abs(msg.x-lastX)>20||Math.abs(msg.y-lastY)>20||Math.abs(msg.z-lastZ)>20){
 				alert('yaole');
 			}
+			var lastX=msg.x;
+			var lastY=msg.y;
+			var lastZ=msg.z;
 		},500);
 		
 	},false)
