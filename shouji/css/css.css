@@ -59,7 +59,7 @@ header>a{ width:3.25rem; height:1.6rem;display:block; margin-left:0.5rem; font-s
 /*商品*/
 .page{ width:16rem;}
 .page_top{ width:15rem; margin:0.5rem auto; display:-webkit-box;}
-.page_top_l{ width:3.75rem; height:8.75rem; background:red; -webkit-box-flex:1; font-size:50px; color:#FFF;}
+.page_top_l{ width:3.75rem; height:8.75rem; background:red; -webkit-box-flex:1; font-size:1rem; color:#FFF;}
 .page_top_l1{ background:#8bca11;}
 .page_top_l2{ background:#838383;}
 .page_top_r{ width:11.25rem; height:8.75rem; border-top:1px solid #eeeeee;}
