@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="yes" name="apple-touch-fullscreen"/>
+
+<title>手机</title>
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+<link href="css/css.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+<script>
+	(function(win,doc){
+		win.addEventListener('resize',setFont,false);
+		setFont();
+		function setFont(){
+			doc.documentElement.style.fontSize=document.documentElement.clientWidth/16+'px';
+		};
+	})(window,document)
+</script>
+
+<!--<script>
+window.onresize=function(){
+	document.documentElement.style.fontSize=document.documentElement.clientWidth/16+'px';
+};
+</script>-->
+</head>
+
+<body>
+<header><a href="javascript:;"></a></header>
+<div class="content">
+    <div class="banner" id="banner">
+    	<div class="bd">
+        	<ul>
+            	<li><img src="img/banner.png"></li>
+                <li>111111111111</li>
+                <li><img src="img/banner.png"></li>
+                <li>2222222222222</li>
+                <li><img src="img/banner.png"></li>
+            </ul>
+        </div>
+        <div class="hd">
+        	<ul class="clearfix">
+            	<li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+	</div>
+    <script type="text/javascript">
+        TouchSlide({ 
+            slideCell:"#banner",
+            titCell:".hd li", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul", 
+            effect:"leftLoop", 
+            autoPlay:true, //自动播放
+            interTime:5000
+        });
+    </script>
+    <div class="nav">
+    	<ul class="clearfix">
+            <li><img src="img/icon1.png"></li>
+            <li><img src="img/icon2.png"></li>
+            <li><img src="img/icon3.png"></li>
+            <li><img src="img/icon4.png"></li>
+        </ul>
+        <div class="lian clearfix">
+        	<a href="javascript:;">商品</a>
+            <a href="javascript:;">生活</a>
+            <a href="javascript:;">品牌</a>
+            <a href="javascript:;">聚宝盆</a>
+        </div>
+        <ul class="clearfix">
+            <li><img src="img/icon5.png"></li>
+            <li><img src="img/icon6.png"></li>
+            <li><img src="img/icon7.png"></li>
+            <li><img src="img/icon8.jpg"></li>
+        </ul>
+        <div class="lian clearfix">
+        	<a href="javascript:;">聚名品</a>
+            <a href="javascript:;">聚家装</a>
+            <a href="javascript:;">聚透</a>
+            <a href="javascript:;">客户端</a>
+        </div>
+    </div>
+    <div class="hot">
+    	<div class="hot_nav clearfix">
+        	<p class="p2"><span>聚划算热卖排行</span></p>
+            <p class="p1">TOP10</p>
+        </div>
+        <div class="hot-list">
+        	<ul>
+            	<li>
+                	<div class="li_l_num1">1</div>
+                    <div class="li_c"><img src="img/tu1.png" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="li_l_num1 li_l_num2">2</div>
+                    <div class="li_c"><img src="img/tu2.png" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="li_l_num1 li_l_num3">3</div>
+                    <div class="li_c"><img src="img/tu3.png" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="li_l_num1 li_l_num4">4</div>
+                    <div class="li_c"><img src="img/tu4.png" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="li_l_num1 li_l_num5">5</div>
+                    <div class="li_c"><img src="img/tu5.png" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="li_l_num1 li_l_num6">6</div>
+                    <div class="li_c"><img src="img/tu6.png" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="li_l_num1 li_l_num7">7</div>
+                    <div class="li_c"><img src="img/tu7.png" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="li_l_num1 li_l_num8">8</div>
+                    <div class="li_c"><img src="img/tu8.png" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="li_l_num1 li_l_num9">9</div>
+                    <div class="li_c"><img src="img/tu9.png" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="li_l_num1 li_l_num10">10</div>
+                    <div class="li_c"><img src="img/tu10.jpg" alt=""></div>
+                    <div class="li_r">
+                    	<div class="li_rl">
+                        	<p>已售68423</p>
+                            <p><i>2.3折</i><span>299</span></p>
+                        </div>
+                        <div class="li_rr">
+                        	<p>&yen;51&gt;</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-fot">
+        	<p>更多划算&nbsp;&nbsp;逛起来！</p>
+        </div>
+    </div>
+    <div class="page">
+    	<div class="page_top">
+        	<div class="page_top_l">商品团</div>
+            <ul class="page_top_r">
+            	<li><span>服饰</span></li>
+                <li>配饰</li>
+                <li>美妆</li>
+                <li>鞋包</li>
+                <li>食品</li>
+                <li><span>家居</span></li>
+                <li>运动</li>
+                <li><span>电器</span></li>
+                <li>百货</li>
+                <li>母婴</li>
+                <li>数码</li>
+                <li>更多</li>
+            </ul>
+        </div>
+        <div class="hot-fot">
+        	<p>精彩商品&nbsp;&nbsp;逛起来！</p>
+        </div>
+        <div class="page_top">
+        	<div class="page_top_l page_top_l1">生活团</div>
+            <ul class="page_top_r">
+            	<li><span>服饰</span></li>
+                <li>配饰</li>
+                <li>美妆</li>
+                <li>鞋包</li>
+                <li>食品</li>
+                <li><span>家居</span></li>
+                <li>运动</li>
+                <li><span>电器</span></li>
+                <li>百货</li>
+                <li>母婴</li>
+                <li>数码</li>
+                <li>更多</li>
+            </ul>
+        </div>
+        <div class="hot-fot">
+        	<p>品质生活&nbsp;&nbsp;逛起来！</p>
+        </div>
+        <div class="page_top">
+        	<div class="page_top_l page_top_l2">品牌团</div>
+            <ul class="page_top_r">
+            	<li><span>服饰</span></li>
+                <li>配饰</li>
+                <li>美妆</li>
+                <li>鞋包</li>
+                <li>食品</li>
+                <li><span>家居</span></li>
+                <li>运动</li>
+                <li><span>电器</span></li>
+                <li>百货</li>
+                <li>母婴</li>
+                <li>数码</li>
+                <li>更多</li>
+            </ul>
+        </div>
+        <div class="hot-fot">
+        	<p>品牌折扣&nbsp;&nbsp;逛起来！</p>
+        </div>
+    </div>
+    <div class="kehu">
+    	<ul>
+        	<li>
+            	<img src="img/biao1.png" alt="" />
+            	<p>IOS客户端</p>
+            </li>
+            <li>
+            	<img src="img/biao2.png" alt="" />
+            	<p>安卓客户端</p>
+            </li>
+            <li>
+            	<img src="img/biao3.png" alt="" />
+            	<p>意见反馈</p>
+            </li>
+        </ul>
+    </div>
+    <div class="fanhui">
+  		<div class="fan">
+            <div class="fanhui_l">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+            </div>
+            <div class="fanhui_r">
+            	<a href="javascript:;">top^</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+	<div>
+    	<a href="javascript">标准版</a>
+        <a href="javascript">电脑版</a>
+        <p>©2013&nbsp;浙B2-20080224&nbsp;&nbsp;服务中心</p>
+    </div>
+</footer>
+</body>
+</html>
