@@ -525,6 +525,13 @@
         }
     }
 
+	function toggleSound() {  
+	        var music = document.getElementByIdx_x_x("audio");//获取ID  
+	        if (music.paused) { //判读是否播放  
+	                music.play(); //没有就播放  
+	        }  
+	}  
+
     window.random = random;
     window.bezier = bezier;
     window.Point = Point;
